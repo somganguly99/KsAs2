@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(0, 0, 80);
+  color: white;
+}
+
+.dif-sel {
+  background-color: rgb(47, 0, 255);
+  color: rgb(224, 182, 103);
+  padding: 2rem;
+  text-align: center;
+}
+
+.difficulty-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.8rem;
+}
+
+.difficulty-label {
+  margin: 0;
+}
+
+.difficulty-mode-container {
+  margin: 1rem 0;
+}
+
+.difficulty-mode {
+  white-space: pre;
+  font-size: 1.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.sudoku-container {
+  background: linear-gradient(to bottom, rgb(47, 0, 255), rgb(162, 141, 255));
+  padding: 1rem 0;
+}
+
+.sudoku-grid {
+  display: grid;
+  grid-template-columns: repeat(9, 40px);
+  grid-template-rows: repeat(9, 40px);
+  gap: 2px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.sudoku-cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgb(162, 141, 255);
+  color: rgb(47, 0, 255);
+  border: 1px solid #999;
+}
+
+.prefilled {
+  background-color: rgb(47, 0, 255);
+  color: rgb(162, 141, 255);
+  font-weight: bold;
+}
+
+.indv-box {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#result {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.score {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.btn{
+  background-color: rgb(162, 141, 255);
+  color: rgb(47, 0, 255);
+  border-radius: 10%;
+  transition: transform 0.2s ease;
+  border: 2rem;
+  border-color: rgb(224, 182, 103);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
