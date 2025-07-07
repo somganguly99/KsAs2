@@ -95,7 +95,7 @@ button {
   color: rgb(47, 0, 255);
   border-radius: 10%;
   transition: transform 0.2s ease;
-  border: 2rem;
+  border: 0.2rem solid;
   border-color: rgb(224, 182, 103);
 }
 
