@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
@@ -10,7 +11,6 @@ body {
   background-color: rgb(0, 0, 80);
   color: white;
 }
-
 .dif-sel {
   background-color: rgb(47, 0, 255);
   color: rgb(224, 182, 103);
@@ -57,6 +57,8 @@ button {
   gap: 2px;
   width: fit-content;
   margin: 0 auto;
+   border: 2px solid;
+  border-image: linear-gradient(to bottom, rgb(255, 241, 214), rgb(255, 145, 0)) 1;
 }
 
 .sudoku-cell {
@@ -66,7 +68,16 @@ button {
   font-size: 20px;
   background-color: rgb(162, 141, 255);
   color: rgb(47, 0, 255);
-  border: 1px solid #999;
+  border: 1px solid #4400ff;
+}
+
+.sudoku-cell[data-col="2"],
+.sudoku-cell[data-col="5"] {
+  border-right: 2px solid rgb(47, 0, 255);
+}
+.sudoku-cell[data-row="2"],
+.sudoku-cell[data-row="5"] {
+  border-bottom: 2px solid rgb(47, 0, 255);
 }
 
 .prefilled {
@@ -99,6 +110,25 @@ button {
   border-color: rgb(224, 182, 103);
 }
 
-.btn:hover {
+.ibtn{
+  background-color: rgb(47, 0, 255);
+  color:  rgb(162, 141, 255);
+  border-radius: 10%;
+  transition: transform 0.2s ease;
+  border: 0.2rem solid;
+  border-color:rgb(224, 182, 103);
+}
+
+.btn:hover,.ibtn:hover {
   transform: scale(1.05);
+}
+
+.conflict {
+  background-color: red !important;
+  color: white !important;
+}
+.reset-score-wrapper {
+  background-color: rgb(0, 0, 80); /* same as body */
+  padding: 1rem 0 2rem;
+  text-align: center;
 }

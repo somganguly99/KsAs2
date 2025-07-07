@@ -17,18 +17,21 @@
       <div class="difficulty-mode">   Easy   </div>
     </div>
     <button class="btn" onclick="generateSudoku()">New Game</button>
+    <button class="btn" onclick="resetSudoku()">Reset Board</button>
   </div>
 
   <div class="sudoku-container">
     <div class="sudoku-grid" id="sudokuGrid"></div>
     <div class="indv-box">
-      <button class="btn" onclick="checkSolution()">Check Solution</button>
+      <button class="ibtn" onclick="checkSolution()">Check Solution</button>
       <p id="result"></p>
     </div>
   </div>
 
   <div class="score" id="scoreBoard"></div>
-
+  <div class="reset-score-wrapper">
+  <button class="btn" onclick="resetScore();  ">Reset Score</button>
+</div>
   <script src="app.js"></script>
 </body>
 </html>
